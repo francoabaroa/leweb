@@ -5,10 +5,6 @@
   "author": "Franco Abaroa <franco9395@gmail.com>",
   "license": "MIT",
   "main": "server/server.js",
-  "scripts": {
-    "start": "node server.js",
-    "webpack": "webpack -d --progress --colors --watch"
-  },
   "dependencies": {
     "aframe": "^0.3.2",
     "aframe-animation-component": "^3.0.4",
@@ -37,7 +33,11 @@
     "react-tap-event-plugin": "^2.0.1",
     "webpack": "^1.13.3",
     "jquery": "^3.1.1",
-    "material-ui": "^0.16.4",
+    "material-ui": "^0.16.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "webpack": "webpack -d --progress --colors --watch"
   },
   "repository": {
     "type": "git",

@@ -7,12 +7,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link, withRouter } from 'react-router';
 import $ from 'jquery';
-import isEmail from 'validator/lib/isEmail';
-
-import UnifiedComponent from './UnifiedComponent';
 
 import Home from './Home.js';
-import Image from './Image.js';
+
 
 
 class App extends React.Component {
@@ -30,7 +27,6 @@ class App extends React.Component {
 
   componentDidUpdate () {
   }
-
 
   render () {
     let self = this;

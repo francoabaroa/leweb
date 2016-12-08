@@ -1,5 +1,11 @@
 #ENV VARS
-.env.config
+.env
+
+
+.DS_Store
+client/build/bundle.js
+client/build/bundle.js.map
+client/build/
 
 # Logs
 logs
