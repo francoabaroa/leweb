@@ -45,7 +45,7 @@ class App extends React.Component {
 
     if (this.props.router.location.pathname.indexOf('/') >= 0) {
       return (
-        <Home uploadBar={this.handleToggle.bind(this)} open={this.state.open} />
+        <Home handleToggle={this.handleToggle.bind(this)} open={this.state.open} />
       );
     } {/*else if (this.props.router.location.pathname.indexOf('/dashboard') >= 0) {
       return (
