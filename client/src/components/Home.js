@@ -15,6 +15,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
 import Avatar from 'material-ui/Avatar';
 
+import Drawer from 'material-ui/Drawer';
+
 
 import {
   blue300,
@@ -56,20 +58,20 @@ injectTapEventPlugin();
 
 
 export default props => {
-
   return (
     <div>
 
       <MuiThemeProvider muiTheme={getMuiTheme()}>
-      <Toolbar >
-        <ToolbarGroup>
-          <Avatar src={props.profilePic} />
-        </ToolbarGroup>
-        <ToolbarGroup>
-          <ToolbarTitle className="fancyText" text={"Welcome, "} />
-        </ToolbarGroup>
-
-      </Toolbar>
+        <RaisedButton
+          label="Toggle Drawer"
+          onTouchTap={props.handleToggle}
+        />
+      </MuiThemeProvider>
+        <MuiThemeProvider muiTheme={getMuiTheme()}>
+        <Drawer open={props.open}>
+          <MenuItem>Menu Item</MenuItem>
+          <MenuItem>Menu Item 2</MenuItem>
+        </Drawer>
       </MuiThemeProvider>
 
       <h1 className="centerText"> Immerse </h1>
