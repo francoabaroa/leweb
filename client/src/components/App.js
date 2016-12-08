@@ -8,6 +8,10 @@ import ReactDOM from 'react-dom';
 import { Link, withRouter } from 'react-router';
 import $ from 'jquery';
 
+import Drawer from 'material-ui/Drawer';
+import MenuItem from 'material-ui/MenuItem';
+import RaisedButton from 'material-ui/RaisedButton';
+
 import Home from './Home.js';
 
 
@@ -19,6 +23,7 @@ class App extends React.Component {
       email: '',
       password: '',
       firstName: '',
+      open: false
     };
   }
 
@@ -28,13 +33,19 @@ class App extends React.Component {
   componentDidUpdate () {
   }
 
+  handleToggle() {
+    this.setState({
+      open: !this.state.open
+    });
+  }
+
   render () {
     let self = this;
     let vrView = '';
 
     if (this.props.router.location.pathname.indexOf('/') >= 0) {
       return (
-        <Home/>
+        <Home uploadBar={this.handleToggle.bind(this)} open={this.state.open} />
       );
     } {/*else if (this.props.router.location.pathname.indexOf('/dashboard') >= 0) {
       return (
