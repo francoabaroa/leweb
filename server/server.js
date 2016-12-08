@@ -18,8 +18,7 @@ const commentController = require('../db/controllers/comments.js');
 
 const port = process.env.NODE_PORT;
 const secret = process.env.SESSION_SECRET;
-const AWSaccessKey = process.env.ACCESSKEYID;
-const AWSsecretKey = process.env.SECRETACCESSKEY;
+
 
 // const redisClient = redis.createClient();
 const app = express();
