@@ -1,7 +1,22 @@
 body{
-  background-color: grey;
+  background-color: #2E4057 !important;
+  font-family: 'Comfortaa', cursive !important;
+
 }
 
 .width {
   margin-left: 250px !important;
+}
+
+a {
+  font-size: 100px;
+  color: white !important;
+}
+
+.mui-tabs__bar>li.mui--is-active>a {
+  color: #99C24D !important;
+}
+
+.mui-tabs__bar>li.mui--is-active {
+  border-bottom: 4px solid #99C24D !important;
 }
