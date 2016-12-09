@@ -13,6 +13,7 @@ import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
 
 import Home from './Home.js';
+import Main from './Main.js';
 
 
 
@@ -47,17 +48,12 @@ class App extends React.Component {
       return (
         <Home handleToggle={this.handleToggle.bind(this)} open={this.state.open} />
       );
-    } {/*else if (this.props.router.location.pathname.indexOf('/dashboard') >= 0) {
+    } else if (this.props.router.location.pathname.indexOf('/main') >= 0) {
       return (
-              <Dashboard
-              currentUser={this.state.currentUser}
-                profilePic = {this.state.profilePic}
-                shouldHide={this.state.isUploading}
-                uploadBar={this.uploadBar.bind(this)}
-              />
+              <Main/>
       );
 
-    } */}
+    }
   }
 }
 
