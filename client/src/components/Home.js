@@ -17,6 +17,11 @@ import Avatar from 'material-ui/Avatar';
 
 import Drawer from 'material-ui/Drawer';
 
+import ReactDOM from 'react-dom';
+import Tabs from 'muicss/lib/react/tabs';
+import Tab from 'muicss/lib/react/tab';
+
+
 const injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin();
 
@@ -27,26 +32,27 @@ class Home extends React.Component {
     super(props);
   }
 
+  onChange(i, value, tab, ev) {
+    console.log(arguments);
+  }
+
+  onActive(tab) {
+    console.log(arguments);
+  }
 
   render() {
     let self = this;
     return (
       <div>
 
-        <MuiThemeProvider muiTheme={getMuiTheme()}>
-        <RaisedButton
-          label="Toggle Drawer"
-          className="width"
-          onTouchTap={self.props.handleToggle}
-        />
-        </MuiThemeProvider>
 
-        <MuiThemeProvider muiTheme={getMuiTheme()}>
-        <Drawer open={self.props.open}>
-          <MenuItem>Menu Item</MenuItem>
-          <MenuItem>Menu Item 2</MenuItem>
-        </Drawer>
-        </MuiThemeProvider>
+        <Tabs onChange={this.onChange} initialSelectedIndex={1} justified={true}>
+               <Tab className="mui--text-white" value="pane-1" label="Home" onActive={this.onActive}></Tab>
+               <Tab className="mui--text-white" value="pane-2" label="Portfolio"></Tab>
+               <Tab value="pane-3" label="Blog"></Tab>
+               <Tab value="pane-4" label="Contact"></Tab>
+             </Tabs>
+
       </div>
     );
   }
