@@ -15,7 +15,7 @@ const app = express();
 app.use(bodyParser.json({limit: '40mb'}));
 app.use(compression()); // gzip compress all responses
 
-const routes = ['/'];
+const routes = ['/', '/contact', '/portfolio', '/skills', '/', '/hackerwords', '/goolp', '/immerse', ];
 
 for (const route of routes) {
   app.get(route, (req, res) => {
