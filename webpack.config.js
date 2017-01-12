@@ -23,7 +23,7 @@ module.exports = {
   entry: APP_DIR,
 
   resolve: {
-      modulesDirectories: ["./node_modules", ".node_modules/babel"],
+      modulesDirectories: ["./node_modules", "./node_modules/babel"],
       extensions: ['', '.js', '.jsx']
   },
 
