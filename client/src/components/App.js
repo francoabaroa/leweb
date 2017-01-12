@@ -14,6 +14,12 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 import Home from './Home.js';
 import Main from './Main.js';
+import Portfolio from './Portfolio.js';
+import Skills from './Skills.js';
+import Contact from './Contact.js';
+import HackerWords from './HackerWords.js';
+import Immerse from './Immerse.js';
+import Goolp from './Goolp.js';
 
 
 
@@ -40,17 +46,65 @@ class App extends React.Component {
     });
   }
 
+  onEmailChange() {
+    let route = arguments[0].props.label.toLowerCase();
+    console.log(route, 'called');
+    if (route === 'home') {
+      this.props.router.replace('/');
+    } else {
+      this.props.router.replace('/' + route);
+    }
+  }
+
+  portfolioChange(route) {
+    this.props.router.replace('/' + route);
+  }
+
+
   render () {
     let self = this;
     let vrView = '';
 
-    if (this.props.router.location.pathname.indexOf('/') >= 0) {
+    if (this.props.router.location.pathname.indexOf('/portfolio') >= 0) {
+      console.log('this is rerendering PORT');
       return (
-        <Home handleToggle={this.handleToggle.bind(this)} open={this.state.open} />
+              <Portfolio onEmailChange={this.onEmailChange.bind(this)} portfolioChange={this.portfolioChange.bind(this)} router={self.props.router}/>
       );
-    } else if (this.props.router.location.pathname.indexOf('/main') >= 0) {
+
+    } else if (this.props.router.location.pathname.indexOf('/skills') >= 0) {
+      console.log('this is rerendering SKILLS');
       return (
-              <Main/>
+              <Skills onEmailChange={this.onEmailChange.bind(this)} router={this.props.router}/>
+      );
+
+    } else if (this.props.router.location.pathname.indexOf('/contact') >= 0) {
+      console.log('this is rerendering CONTACT');
+      return (
+              <Contact onEmailChange={this.onEmailChange.bind(this)} router={this.props.router}/>
+      );
+
+    } else if (this.props.router.location.pathname.indexOf('/hackerwords') >= 0) {
+      console.log('this is rerendering CONTACT');
+      return (
+              <HackerWords onEmailChange={this.onEmailChange.bind(this)} portfolioChange={this.portfolioChange.bind(this)} router={this.props.router}/>
+      );
+
+    } else if (this.props.router.location.pathname.indexOf('/immerse') >= 0) {
+      console.log('this is rerendering CONTACT');
+      return (
+              <Immerse onEmailChange={this.onEmailChange.bind(this)} portfolioChange={this.portfolioChange.bind(this)} router={this.props.router}/>
+      );
+
+    } else if (this.props.router.location.pathname.indexOf('/goolp') >= 0) {
+      console.log('this is rerendering CONTACT');
+      return (
+              <Goolp onEmailChange={this.onEmailChange.bind(this)} portfolioChange={this.portfolioChange.bind(this)} router={this.props.router}/>
+      );
+
+    } else if (this.props.router.location.pathname.indexOf('/') >= 0) {
+      console.log('this is rerendering home');
+      return (
+              <Home onEmailChange={this.onEmailChange.bind(this)} router={this.props.router} />
       );
 
     }

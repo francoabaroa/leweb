@@ -20,43 +20,37 @@ import Drawer from 'material-ui/Drawer';
 import ReactDOM from 'react-dom';
 import Tabs from 'muicss/lib/react/tabs';
 import Tab from 'muicss/lib/react/tab';
+import Container from 'muicss/lib/react/container';
 
 
-const injectTapEventPlugin = require("react-tap-event-plugin");
-injectTapEventPlugin();
+export default props => {
 
-
-class Home extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  onChange(i, value, tab, ev) {
-    console.log(arguments);
-  }
-
-  onActive(tab) {
-    console.log(arguments);
-  }
-
-  render() {
-    let self = this;
-    return (
+  return (
       <div>
 
 
-        <Tabs onChange={this.onChange} initialSelectedIndex={1} justified={true}>
-               <Tab className="mui--text-white" value="pane-1" label="Home" onActive={this.onActive}></Tab>
-               <Tab className="mui--text-white" value="pane-2" label="Portfolio"></Tab>
-               <Tab value="pane-3" label="Blog"></Tab>
-               <Tab value="pane-4" label="Contact"></Tab>
+        <Tabs initialSelectedIndex={0} justified={true}>
+               <Tab className="mui--text-white" value="pane-1" label="Home" onActive={props.onEmailChange}></Tab>
+               <Tab className="mui--text-white" value="pane-2" onActive={props.onEmailChange} label="Portfolio"></Tab>
+               <Tab value="pane-3" label="Skills" onActive={props.onEmailChange}></Tab>
+               <Tab value="pane-4" label="Contact" onActive={props.onEmailChange}></Tab>
              </Tabs>
 
+             <br/>
+             <br/>
+
+             <Container fluid={true} className='centered'>
+             <span>
+              <img className='sizeDown' src={'https://avatars3.githubusercontent.com/u/18104028?v=3&u=fa7173dba5b5b7b94e2796655e4ddb8d3a851bd6&s=400'} />
+                   </span>
+
+                   </Container>
+
+              <br/>
+
+             <h4 className="mui--text-display1 mui--text-center">Software Engineer - UI Designer - Travel Enthusiast - Foodie - Football Lover</h4>
+
+
       </div>
-    );
-  }
-}
-
-
-export default withRouter(Home, { withRef: true });
+  );
+};
