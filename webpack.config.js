@@ -21,6 +21,15 @@ var APP_DIR = path.resolve(__dirname, 'client/src/index.jsx');
 module.exports = {
   devtool: 'eval',
   entry: APP_DIR,
+
+  resolve: {
+      modulesDirectories: ["./node_modules", ".node_modules/babel"],
+      extensions: ['', '.js', '.jsx']
+  },
+
+  resolveLoader: {
+      root: path.resolve(__dirname, 'node_modules')
+  },
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
@@ -41,9 +50,6 @@ module.exports = {
       },
     ]
   },
-  resolve: {
-          extensions: ['', '.js', '.jsx']
-      },
   externals: {
   "isomorphic-fetch": "fetch"
   },
