@@ -1,7 +1,7 @@
 body{
-  background-color: #2E4057 !important;
-  font-family: 'Comfortaa', cursive !important;
-
+  background-color: white !important;
+  font-family:'Rajdhani', sans-serif !important;
+  color: #2E4057 !important;
 }
 
 .width {
@@ -9,14 +9,108 @@ body{
 }
 
 a {
-  font-size: 100px;
-  color: white !important;
+  color: #2E4057 !important;
+  border-bottom: : 4px solid #2E4057 !important;
 }
 
 .mui-tabs__bar>li.mui--is-active>a {
-  color: #99C24D !important;
+  color: #2E4057 !important;
 }
 
 .mui-tabs__bar>li.mui--is-active {
-  border-bottom: 4px solid #99C24D !important;
+  border-bottom: : 4px solid #2E4057 !important;
 }
+
+.mui--text-display3 {
+ color: #2E4057 !important;
+ text-align: center !important;
+}
+
+.centered {
+  margin: 0 auto !important;
+  max-width: 60%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  text-align: center !important;
+
+}
+
+.floatLeft {
+  float: right !important;
+}
+
+.paddingAdjust {
+  padding-right: 20px !important;
+}
+
+.sizeDown {
+  height: 50%;
+  width: 50%;
+  border: 4px #2E4057 solid;
+}
+
+.sizeDownTwo {
+  height: 80%;
+  width: 80%;
+}
+
+.sizeDownThree {
+  height: 90%;
+  width: 90%;
+}
+
+.testy ul li {
+  display:inline !important;
+}
+
+.testy ul {
+  list-style-type: square;
+  text-align: center;
+}
+
+.box {
+  border-bottom: 4px #2E4057 solid;
+  margin:0 auto;
+  text-align: center !important;
+  border-radius: 4px;
+  color: #2E4057;
+  width: 470px;
+}
+
+.whiteFont {
+  color:white !important;
+}
+
+.test3 {
+  font-size: 40px !important;
+  color: #2E4057 !important;
+  text-align: center;
+}
+
+button.vex-dialog-button-primary.vex-dialog-button.vex-first {
+  display:none !important;
+}
+
+button.vex-dialog-button-secondary.vex-dialog-button.vex-last {
+  display:none !important;
+}
+
+button.btn {
+  font-family:'Rajdhani', sans-serif !important;
+  margin:0 auto !important;
+  border:2px #2E4057 solid;
+  color: #2E4057;
+  background-color: #f0f0f0;
+}
+
+div.vex-dialog-message {
+  font-family:'Rajdhani', sans-serif !important;
+  text-align: center !important;
+  color: #2E4057 !important;
+}
+
+div.vex-custom-field-wrapper {
+  text-align: center !important;
+}
+
+
