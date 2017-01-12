@@ -5,7 +5,7 @@ const compression = require('compression');
 const express = require('express');
 const path = require('path');
 
-const port = process.env.NODE_PORT;
+const port = 3000;
 const secret = process.env.SESSION_SECRET;
 
 
