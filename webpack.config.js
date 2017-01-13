@@ -9,7 +9,7 @@ var path = require('path');
 // Build directory is where the bundle file will be placed
 var BUILD_DIR = path.resolve(__dirname, 'client/build');
 // App directory is where all of your raw JSX files will be placed
-var APP_DIR = path.resolve(__dirname, 'client');
+var APP_DIR = path.resolve(__dirname, 'client/src/index.jsx');
 
 // The files in the app directory will get transpiled and packaged into one
 // file, bundle.js, which will get saved in the BUILD_DIR.

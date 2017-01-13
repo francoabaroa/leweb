@@ -116,6 +116,15 @@ export default props => {
 
                         <h5 className="mui--text-center"> JavaScript - AngularJS - React </h5> <h5> NodeJS - PostgreSQL - Chrome Extension API </h5>
                         </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <div className="mui--text-center">
+                          <a className="btn" href="#"> Take me to the top </a>
+                        </div>
+                        <br/>
             </div>
   );
 };

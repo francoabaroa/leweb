@@ -10,7 +10,7 @@ body{
 
 a {
   color: #2E4057 !important;
-  border-bottom: : 4px solid #2E4057 !important;
+  /*border-bottom: 4px solid #2E4057 !important;*/
 }
 
 .mui-tabs__bar>li.mui--is-active>a {
@@ -18,7 +18,8 @@ a {
 }
 
 .mui-tabs__bar>li.mui--is-active {
-  border-bottom: : 4px solid #2E4057 !important;
+  border-bottom: 3px solid #2E4057 !important;
+  /*border-top: 3px #2E4057 solid !important;*/
 }
 
 .mui--text-display3 {
@@ -103,6 +104,14 @@ button.btn {
   background-color: #f0f0f0;
 }
 
+.btn {
+  font-family:'Rajdhani', sans-serif !important;
+  margin:0 auto !important;
+  border:2px #2E4057 solid;
+  color: #2E4057;
+  background-color: #f0f0f0;
+}
+
 div.vex-dialog-message {
   font-family:'Rajdhani', sans-serif !important;
   text-align: center !important;
@@ -111,6 +120,10 @@ div.vex-dialog-message {
 
 div.vex-custom-field-wrapper {
   text-align: center !important;
+}
+
+.bottomPage {
+  border-top: 3px solid #2196F3 !important;
 }
 
 
