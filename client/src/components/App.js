@@ -57,7 +57,11 @@ class App extends React.Component {
   }
 
   portfolioChange(route) {
-    this.props.router.replace('/' + route);
+    if (route === 'immerse') {
+      window.location = 'https://www.github.com/francoabaroa/escape-reality';
+    } else {
+      window.location = 'https://www.github.com/francoabaroa/' + route;
+    }
   }
 
 

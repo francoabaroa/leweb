@@ -40,7 +40,7 @@ export default props => {
                    </div>
                         <br/>
                         <div className="mui--text-center">
-                        <h3 onClick={() => { props.portfolioChange('immerse'); }} className="mui--text-display1 mui--text-center"> Immerse </h3>
+                        <h3 className="mui--text-display1 mui--text-center"> <a onClick={() => { props.portfolioChange('immerse'); }}> Immerse </a> </h3>
 
                         <div className="mui--text-center">
                           <em>An Instagram-like virtual reality application</em>
@@ -52,7 +52,7 @@ export default props => {
 
                          <Container fluid={true} className='centered'>
                            <span>
-                             <img className='sizeDownThree' src={'../img/vr6.gif'} />
+                             <img onClick={() => { props.portfolioChange('immerse'); }} className='sizeDownThree' src={'../img/vr6.gif'} />
                            </span>
 
                         </Container>
@@ -63,7 +63,7 @@ export default props => {
                         <br/>
                         <br/>
                         <div className="mui--text-center">
-                        <h3 onClick={() => { props.portfolioChange('hackerwords'); }} className="mui--text-display1 mui--text-center"> HackerWords </h3>
+                        <h3 className="mui--text-display1 mui--text-center"> <a onClick={() => { props.portfolioChange('hackerwords'); }}> HackerWords </a> </h3>
 
                         <div className="mui--text-center">
                           <em>A boggle-like game application for finding words in an N x N matrix</em>
@@ -75,7 +75,7 @@ export default props => {
 
                          <Container fluid={true} className='centered'>
                            <span>
-                             <img className='sizeDownTwo' src={'../img/hw1.gif'} />
+                             <img onClick={() => { props.portfolioChange('hackerwords'); }} className='sizeDownTwo' src={'../img/hw1.gif'} />
                            </span>
 
                         </Container>
@@ -86,7 +86,7 @@ export default props => {
                         <br/>
                         <br/>
                         <div className="mui--text-center">
-                        <h3 onClick={() => { props.portfolioChange('goolp'); }} className="mui--text-display1 mui--text-center"> Goolp </h3>
+                        <h3 className="mui--text-display1 mui--text-center"> <a onClick={() => { props.portfolioChange('goolp'); }}> Goolp </a> </h3>
 
                         <div className="mui--text-center">
                           <em>A restaurant review application that combines the power of Google and Yelp</em>
@@ -98,7 +98,7 @@ export default props => {
 
                          <Container fluid={true} className='centered'>
                            <span>
-                             <img className='sizeDownTwo' src={'../img/g3.gif'} />
+                             <img onClick={() => { props.portfolioChange('goolp'); }} className='sizeDownTwo' src={'../img/g3.gif'} />
                            </span>
 
                         </Container>
@@ -108,7 +108,7 @@ export default props => {
                         <br/>
                         <br/>
                         <div className="mui--text-center">
-                        <h3 onClick={() => { props.portfolioChange('goolp'); }} className="mui--text-display1 mui--text-center"> Markable </h3>
+                        <h3 className="mui--text-display1 mui--text-center"> <a onClick={() => { props.portfolioChange('markable'); }}> Markable </a> </h3>
 
                         <div className="mui--text-center">
                           <em>A Chrome extension application that allows users to share links, markups, and comments with groups of friends</em>
