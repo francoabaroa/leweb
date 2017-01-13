@@ -43,7 +43,7 @@ export default props => {
                         <h3 onClick={() => { props.portfolioChange('immerse'); }} className="mui--text-display1 mui--text-center"> Immerse </h3>
 
                         <div className="mui--text-center">
-                          <em>A Instagram-like virtual reality application</em>
+                          <em>An Instagram-like virtual reality application</em>
                         </div>
 
                         <h5 className="mui--text-center"> JavaScript - AFrame - React - React Router </h5> <h5> NodeJS - MariaDB - AWS S3 - Redis </h5>
@@ -66,7 +66,7 @@ export default props => {
                         <h3 onClick={() => { props.portfolioChange('hackerwords'); }} className="mui--text-display1 mui--text-center"> HackerWords </h3>
 
                         <div className="mui--text-center">
-                          <em>A boggle-like game application for finding words in a N x N matrix</em>
+                          <em>A boggle-like game application for finding words in an N x N matrix</em>
                         </div>
 
                         <h5 className="mui--text-center"> JavaScript - React - React Router </h5> <h5> NodeJS - MongoDB - Mongoose </h5>
