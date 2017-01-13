@@ -48,7 +48,7 @@ export default props => {
 
               <br/>
 
-             <h4 className="mui--text-display1 mui--text-center">Software Engineer - UI Designer - Travel Enthusiast - Foodie - Football Lover</h4>
+             <h4 className="mui--text-display1 mui--text-center">Software Engineer - UI Designer - Travel Enthusiast - Foodie </h4>
 
 
       </div>
