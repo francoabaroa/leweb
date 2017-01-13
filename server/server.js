@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 const bodyParser = require('body-parser');
 const metadata = require('../package.json');
 const compression = require('compression');
@@ -6,7 +6,7 @@ const express = require('express');
 const path = require('path');
 
 const port = 3000;
-const secret = process.env.SESSION_SECRET;
+// const secret = process.env.SESSION_SECRET;
 
 
 // const redisClient = redis.createClient();
