@@ -45,9 +45,9 @@ a {
 }
 
 .sizeDown {
-  height: 50%;
-  width: 50%;
-  border: 4px #2E4057 solid;
+  height: 100%;
+  width: 100%;
+  border: 3px #2E4057 solid;
 }
 
 .sizeDownTwo {

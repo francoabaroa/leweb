@@ -41,14 +41,14 @@ export default props => {
 
              <Container fluid={true} className='centered'>
              <span>
-              <img className='sizeDown' src={'https://avatars3.githubusercontent.com/u/18104028?v=3&u=fa7173dba5b5b7b94e2796655e4ddb8d3a851bd6&s=400'} />
+              <img className='sizeDown' src={'../img/jump.gif'} />
                    </span>
 
                    </Container>
 
               <br/>
 
-             <h4 className="mui--text-display1 mui--text-center">Software Engineer - UI Designer - Travel Enthusiast - Foodie </h4>
+             <h4 className="mui--text-center">Software Engineer - UI Designer - Travel Enthusiast - Foodie </h4>
 
 
       </div>
