@@ -1,5 +1,5 @@
 // require('dotenv').config();
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const metadata = require('../package.json');
 const compression = require('compression');
 const express = require('express');
@@ -12,7 +12,7 @@ const port = 3000;
 // const redisClient = redis.createClient();
 const app = express();
 
-app.use(bodyParser.json({limit: '40mb'}));
+// app.use(bodyParser.json({limit: '40mb'}));
 app.use(compression()); // gzip compress all responses
 
 const routes = ['/', '/contact', '/portfolio', '/skills', '/', '/hackerwords', '/goolp', '/immerse', ];
