@@ -15,7 +15,7 @@ const app = express();
 app.use(bodyParser.json({limit: '40mb'}));
 app.use(compression()); // gzip compress all responses
 
-const routes = ['/', '/contact', '/portfolio', '/skills', '/', '/hackerwords', '/goolp', '/immerse', ];
+const routes = ['/', '/contact', '/portfolio', '/skills'];
 
 for (const route of routes) {
   app.get(route, (req, res) => {
@@ -24,6 +24,20 @@ for (const route of routes) {
 }
 
 app.use(express.static(path.join(__dirname, '../client')));
+
+
+app.get('/contact', function(req, res) {
+  res.sendFile(path.join(__dirname, '/../client/index.html'));
+});
+
+app.get('/portfolio', function(req, res) {
+  res.sendFile(path.join(__dirname, '/../client/index.html'));
+});
+
+app.get('/skills', function(req, res) {
+  res.sendFile(path.join(__dirname, '/../client/index.html'));
+});
+
 
 // wildcard route
 app.get('*', function(req, res) {
